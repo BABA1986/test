@@ -489,3 +489,7 @@
 .text-href {
  color: #005DBA !important   
 }
+
+.nav-item {
+    max-width: 150px;
+}
