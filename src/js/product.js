@@ -47,12 +47,54 @@
             var product = $(this).attr('data-id')
             var productObj = JSON.parse(product)
             $("#myModal").modal('show');
+            $.fn.loadModalHeader(productObj);
+            $.fn.loadModalContent(productObj);
         });
 
         $('body').on('click','.model-close',function(){
-            console.log("addProductButton")
             $("#myModal").modal('hide');
         });
+
+        $.fn.loadModalHeader = function(productObj) {
+            $('.modal-title').empty();
+            $('.modal-title').append(`${productObj.title}`)
+
+            var minPrice = $.fn.minimumPrice(productObj);
+            var maxPrice = $.fn.maximumPrice(productObj);
+            var priceRange = (minPrice == maxPrice) ? `₹${minPrice}` : `₹${minPrice} - ₹${maxPrice}`
+            $('.price-tag').empty();
+            $('.price-tag').append(`${priceRange}`)
+        }
+
+        $.fn.loadModalContent = function(productItem) {
+            $('.item-Prices').empty();
+
+            $.each( productItem.prices, function( index, priceObj ) {
+                var singleChoice = `<div class="form-check"> <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"> 
+                <label class = "paragraph">${priceObj.type}</label><label class="ps-4 form-check-label paragraph" for="flexRadioDefault1">₹${priceObj.price}</label></div>`
+                $('.item-Prices').append(`${singleChoice}`);
+            });
+
+            $('.extra-Items').empty();
+            // $('.extra-Items').append(`${priceRange}`)
+        }
+
+        /*min Price*/
+        $.fn.minimumPrice = function(productItem) {
+             var priceObj = productItem.prices.reduce(function(prev, curr) {
+                return prev.price < curr.price ? prev : curr;
+             });
+
+             return priceObj.price;
+        }
+
+        $.fn.maximumPrice = function(productItem) {
+             var priceObj = productItem.prices.reduce(function(prev, curr) {
+                return prev.price > curr.price ? prev : curr;
+             });
+
+             return priceObj.price;
+        }
 
         /*Create Tabs Content*/
         $.fn.appendTabContent = function(tabItems, tabId, active) { 
@@ -60,13 +102,7 @@
             var tabContainer = `<div id="${tabId}" class="tab-pane fade show p-0 ${active}"><div class="row g-4">`
             var innerItems = ``
             $.each( tabItems, function( index, tabObj ){
-                 var priceToDisplay = tabObj.prices.filter(v => v.type === "plate");
-                 if (priceToDisplay == 'undefined' || priceToDisplay.length <= 0) {
-                    priceToDisplay = tabObj.prices.filter(v => v.type === "half");
-                 } 
-                 if (priceToDisplay == 'undefined' || priceToDisplay.length <= 0) {
-                    priceToDisplay = tabObj.prices.filter(v => v.type === "full");
-                 }
+                 var priceToDisplay = $.fn.minimumPrice(tabObj);
 
                  var jsonString = JSON.stringify(tabObj)
                  innerItems = innerItems + `<div class="col-lg-6"><div class="d-flex align-items-center"><img class="flex-shrink-0 img-fluid rounded" src="${tabObj.img}" alt="" style="width: 80px;">
@@ -77,7 +113,7 @@
                                                 <small style = "font-family: Nutino; font-size: 15px">${tabObj.desc}</small>
                                                 </span>
                                                 <span>
-                                                <h6 class="text-primary">₹${tabObj.prices[0].price}</h6>
+                                                <h6 class="text-primary">₹${priceToDisplay}</h6>
                                                 <a class="addProductButton" data-id='${jsonString}'>Add</a>
                                                 </span>
                                             </small>

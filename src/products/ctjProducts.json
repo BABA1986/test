@@ -7,12 +7,12 @@
         "catageorySubtitle": "Snacks",
         "type": 1,
         "img": "paneertikkarolls.png",
-        "desc": "",
+        "desc": "Soft cottage cheese marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha",
         "prices": [
             {
                 "id": 1,
-                "type": "full",
-                "desc": "Soft cottage cheese marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha",
+                "type": "Full",
+                "desc": "",
                 "price": 189
             }
         ]
@@ -29,7 +29,7 @@
         "prices": [
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 189
             }
@@ -47,7 +47,7 @@
         "prices": [
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 189
             }
@@ -65,7 +65,7 @@
         "prices": [
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 299
             }
@@ -83,7 +83,7 @@
         "prices": [
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 299
             }
@@ -97,17 +97,17 @@
         "catageorySubtitle": "Snacks",
         "type": 0,
         "img": "tandoorichicken.png",
-        "desc": "Chicken marinated in an ajwain flavored mixture of yoghurt, red chili, turmeric and garam masala, skewered and roasted over Earthen oven"
+        "desc": "Chicken marinated in an ajwain flavored mixture of yoghurt, red chili, turmeric and garam masala, skewered and roasted over Earthen oven",
         "prices": [
             {
                 "id": 1,
-                "type": "half",
+                "type": "Half",
                 "desc": "",
                 "price": 299
             },
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 499
             }
@@ -121,17 +121,17 @@
         "catageorySubtitle": "Snacks",
         "type": 0,
         "img": "afganichicken.png",
-        "desc": "Chicken marinated in an cashew nut paste, black pepper and garam masala, skewered and roasted over Earthen oven"
+        "desc": "Chicken marinated in an cashew nut paste, black pepper and garam masala, skewered and roasted over Earthen oven",
         "prices": [
             {
                 "id": 1,
-                "type": "half",
+                "type": "Half",
                 "desc": "",
                 "price": 329
             },
             {
                 "id": 1,
-                "type": "full",
+                "type": "Full",
                 "desc": "",
                 "price": 599
             }
