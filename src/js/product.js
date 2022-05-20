@@ -8,7 +8,7 @@
             var groupedProducts = $.fn.arrangeItemByCategory(productObjs);
             $.fn.appendTabs(groupedProducts);
         }).fail(function(){
-            var products = "[{\"id\":1,\"pid\":1,\"title\":\"Paneer Tikka Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"paneertikkarolls.png\",\"desc\":\"Soft cottage cheese marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha\",\"prices\":[{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":189}]},{\"id\":2,\"pid\":2,\"title\":\"Malai Chaap Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"malaichaaproll.png\",\"desc\":\"Soya chaap marinated and skewered in tandoor mixed with lots of vegetables, cream and sauces served on a crispy tawa parantha.\",\"prices\":[{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":189}]},{\"id\":3,\"pid\":3,\"title\":\"Mutton Seek Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"muttonseekroll.png\",\"desc\":\"[Chef's Special] Soft tendered lamb seekh marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha\",\"prices\":[{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":189}]},{\"id\":4,\"pid\":4,\"title\":\"Panner Tikka\",\"catageory\":\"Veg Tandoori\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"pannertikka.png\",\"desc\":\"Fresh cottage cheese, marinated in fresh yogurt, gram flour and chilies skewered and grilled in the earthen oven - Classic, Malai, Achari\",\"prices\":[{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":299}]},{\"id\":5,\"pid\":5,\"title\":\"Mashroom Tikka\",\"catageory\":\"Veg Tandoori\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"mashroom.png\",\"desc\":\"Fresh Mashroom, fresh cottage cheese, marinated in fresh yogurt, gram flour and chilies skewered and grilled in the earthen oven - Classic, Malai, Achari\",\"prices\":[{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":299}]},{\"id\":6,\"pid\":6,\"title\":\"Tandoori Chicken (With Butter)\",\"catageory\":\"Non Veg Barbeque\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"tandoorichicken.png\",\"desc\":\"Chicken marinated in an ajwain flavored mixture of yoghurt, red chili, turmeric and garam masala, skewered and roasted over Earthen oven\",\"prices\":[{\"id\":1,\"type\":\"half\",\"desc\":\"\",\"price\":299},{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":499}]},{\"id\":7,\"pid\":7,\"title\":\"Afghani Chicken (With Butter)\",\"catageory\":\"Non Veg Barbeque\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"afganichicken.png\",\"desc\":\"Chicken marinated in an cashew nut paste, black pepper and garam masala, skewered and roasted over Earthen oven\",\"prices\":[{\"id\":1,\"type\":\"half\",\"desc\":\"\",\"price\":329},{\"id\":1,\"type\":\"full\",\"desc\":\"\",\"price\":599}]}]"
+            var products = "[{\"id\":1,\"pid\":1,\"title\":\"Paneer Tikka Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"paneertikkarolls.png\",\"desc\":\"Soft cottage cheese marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha\",\"prices\":[{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":189}]},{\"id\":2,\"pid\":2,\"title\":\"Malai Chaap Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"malaichaaproll.png\",\"desc\":\"Soya chaap marinated and skewered in tandoor mixed with lots of vegetables, cream and sauces served on a crispy tawa parantha.\",\"prices\":[{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":189}]},{\"id\":3,\"pid\":3,\"title\":\"Mutton Seek Roll\",\"catageory\":\"Rolls\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"muttonseekroll.png\",\"desc\":\"Chef Special Soft tendered lamb seekh marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha\",\"prices\":[{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":189}]},{\"id\":4,\"pid\":4,\"title\":\"Panner Tikka\",\"catageory\":\"Veg Tandoori\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"pannertikka.png\",\"desc\":\"Fresh cottage cheese, marinated in fresh yogurt, gram flour and chilies skewered and grilled in the earthen oven - Classic, Malai, Achari\",\"prices\":[{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":299}]},{\"id\":5,\"pid\":5,\"title\":\"Mashroom Tikka\",\"catageory\":\"Veg Tandoori\",\"catageorySubtitle\":\"Snacks\",\"type\":1,\"img\":\"mashroom.png\",\"desc\":\"Fresh Mashroom, fresh cottage cheese, marinated in fresh yogurt, gram flour and chilies skewered and grilled in the earthen oven - Classic, Malai, Achari\",\"prices\":[{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":299}]},{\"id\":6,\"pid\":6,\"title\":\"Tandoori Chicken (With Butter)\",\"catageory\":\"Non Veg Barbeque\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"tandoorichicken.png\",\"desc\":\"Chicken marinated in an ajwain flavored mixture of yoghurt, red chili, turmeric and garam masala, skewered and roasted over Earthen oven\",\"prices\":[{\"id\":1,\"type\":\"Half\",\"desc\":\"\",\"price\":299},{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":499}]},{\"id\":7,\"pid\":7,\"title\":\"Afghani Chicken (With Butter)\",\"catageory\":\"Non Veg Barbeque\",\"catageorySubtitle\":\"Snacks\",\"type\":0,\"img\":\"afganichicken.png\",\"desc\":\"Chicken marinated in an cashew nut paste, black pepper and garam masala, skewered and roasted over Earthen oven\",\"prices\":[{\"id\":1,\"type\":\"Half\",\"desc\":\"\",\"price\":329},{\"id\":1,\"type\":\"Full\",\"desc\":\"\",\"price\":599}]}]"
             var productObjs = JSON.parse(products)
             products = productObjs
             var groupedProducts = $.fn.arrangeItemByCategory(productObjs);
@@ -27,18 +27,6 @@
 
             groupData.splice(0, 0, {"catageory": "All Foods", "items" : allProducts});
             return groupData
-        }
-
-        /*Create Tabs*/
-        $.fn.appendTabs = function(productsParam) { 
-            console.log("Function Called ---> appendTabs")
-            $.each( productsParam, function( index, tabItem) {
-                var active = (index == 0) ? "active" : "";
-                var tabId = 'tab-'+index;
-                var catageoryName = tabItem.catageory;
-                $('#menuCategory').append(`<li class=\"nav-item\"><a class=\"d-flex align-items-center text-start mx-3 ms-0 pb-3 ${active}\" data-bs-toggle=\"pill\" href=\"#${tabId}\"><i class=\"fa fa-coffee fa-2x text-primary\"></i><div class=\"ps-3\"><h6 class=\"mt-n1 mb-0\">${catageoryName}</h6></div></a></li>`);
-                $.fn.appendTabContent(tabItem.items, tabId, active);
-            });
         }
 
         /*Raise item Selection Model*/
@@ -68,10 +56,11 @@
 
         $.fn.loadModalContent = function(productItem) {
             $('.item-Prices').empty();
-
+            var minPrice = $.fn.minimumPrice(productItem);
             $.each( productItem.prices, function( index, priceObj ) {
-                var singleChoice = `<div class="form-check"> <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"> 
-                <label class = "paragraph">${priceObj.type}</label><label class="ps-4 form-check-label paragraph" for="flexRadioDefault1">₹${priceObj.price}</label></div>`
+                var checkedStr = (minPrice == priceObj.price) ? "checked" : ""
+                var singleChoice = `<div class="form-check"> <input class="form-check-input" type="radio" name="flexCheck" id="flexCheckId-${index}" ${checkedStr}> 
+                <label class="form-check-label paragraph" for="flexCheckId-${index}"><small class = "paragraph">${priceObj.type}</small><small class = "ps-2">₹${priceObj.price}</small></label></div>`
                 $('.item-Prices').append(`${singleChoice}`);
             });
 
@@ -94,6 +83,18 @@
              });
 
              return priceObj.price;
+        }
+
+        /*Create Tabs*/
+        $.fn.appendTabs = function(productsParam) { 
+            console.log("Function Called ---> appendTabs")
+            $.each( productsParam, function( index, tabItem) {
+                var active = (index == 0) ? "active" : "";
+                var tabId = 'tab-'+index;
+                var catageoryName = tabItem.catageory;
+                $('#menuCategory').append(`<li class=\"nav-item\"><a class=\"d-flex align-items-center text-start mx-3 ms-0 pb-3 ${active}\" data-bs-toggle=\"pill\" href=\"#${tabId}\"><i class=\"fa fa-coffee fa-2x text-primary\"></i><div class=\"ps-3\"><h6 class=\"mt-n1 mb-0\">${catageoryName}</h6></div></a></li>`);
+                $.fn.appendTabContent(tabItem.items, tabId, active);
+            });
         }
 
         /*Create Tabs Content*/
