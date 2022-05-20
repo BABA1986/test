@@ -83,72 +83,34 @@
 
 
 /*** Navbar ***/
-.navbar-dark .navbar-nav .nav-link {
-    position: relative;
-    margin-left: 25px;
-    padding: 35px 0;
-    font-size: 15px;
-    color: var(--light) !important;
-    text-transform: uppercase;
-    font-weight: 500;
-    outline: none;
-    transition: .5s;
+body {
+  font-family: Montserrat, sans-serif;
+}
+.navbar-brand {
+  background-image: url("img/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.sticky-top.navbar-dark .navbar-nav .nav-link {
-    padding: 20px 0;
+.nav-link {
+  color: #ED343D !important;  
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary) !important;
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FEEE12 !important;
+  background-color: #ED343D;
+  border-radius: 15px;
 }
 
-.navbar-dark .navbar-brand img {
-    max-height: 100px;
-    transition: .5s;
+.navbar-toggler {
+     background: #ED343D !important;
 }
 
-.sticky-top.navbar-dark .navbar-brand img {
-    max-height: 45px;
+.bg-yellow {
+ background-color: #FEEE12 !important;   
 }
 
-@media (max-width: 991.98px) {
-    .sticky-top.navbar-dark {
-        position: relative;
-    }
-
-    .navbar-dark .navbar-collapse {
-        margin-top: 15px;
-        border-top: 1px solid rgba(255, 255, 255, .1)
-    }
-
-    .navbar-dark .navbar-nav .nav-link,
-    .sticky-top.navbar-dark .navbar-nav .nav-link {
-        padding: 10px 0;
-        margin-left: 0;
-    }
-
-    .navbar-dark .navbar-brand img {
-        max-height: 45px;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-dark {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        background: transparent !important;
-    }
-    
-    .sticky-top.navbar-dark {
-        position: fixed;
-        background: var(--dark) !important;
-    }
-}
 
 
 /*** Hero Header ***/
@@ -224,12 +186,6 @@
 
 .service-item:hover * {
     color: var(--light) !important;
-}
-
-
-/*** Food Menu ***/
-.nav-pills .nav-item .active {
-    border-bottom: 2px solid var(--primary);
 }
 
 
@@ -423,7 +379,7 @@
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ED343D;
     border-radius: 35px;
     transition: .3s;
 }
@@ -437,7 +393,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #FFFFFF;
+    color: #ED343D;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
@@ -480,7 +436,9 @@
 }
 
 .logo-title {
-    color: #FEEE12 !important
+    color: #ED343D !important;
+    line-height: 25px;
+    text-align: right;
 }
 
 .text-primary {
@@ -490,6 +448,50 @@
  color: #005DBA !important   
 }
 
-.nav-item {
-    max-width: 150px;
+.productTitle {
+ max-width: 200px;   
+}
+
+.addButton {
+    background-color: #ED343D;  /* Green */
+  border: none;
+  color: #FEEE12;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.addButton:hover {
+  color: white;
+}
+
+.productName {
+    font-size: 0.9rem !important;
+}
+
+.cw-hero-header {
+    background-color: #FEEE12 !important;
+}
+
+.paragraph {
+    font-family: "Nutino" !important;
+}
+
+.red-color {
+ color: #ED343D !important;   
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #ED343D;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
 }
