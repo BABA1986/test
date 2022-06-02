@@ -45,7 +45,7 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-yellow">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-yellow">
                <div class="container-fluid">
                   <img src="img/logo.png" class = "navbar-brand" alt="Logo">
                   <div style = "margin-top:20px">
@@ -60,10 +60,10 @@
                            <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house-fill me-2"></i>Home</a>
                         </li>
                         <li class="nav-item rounded">
-                           <a class="nav-link" href="menu.html"><i class="fas fa-utensils me-2"></i>Menu</a>
+                           <a class="nav-link active" href="menu.html"><i class="fas fa-utensils me-2"></i>Menu</a>
                         </li>
                         <li class="nav-item rounded">
-                           <a class="nav-link active" href="contact.html"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
+                           <a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
                         </li>
                         <li class="nav-item rounded">
                         <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart me-2"></i>Cart</a>
@@ -76,81 +76,29 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Contact Start -->
+        <!-- Menu Start -->
         <div class="container-xxl py-5 pt-5">
-            <div class="pt-5">
             <div class="container pt-5">
+                <div class="pt-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Contact Us</h5>
-                    <h4 class="mb-5">Contact For Any Query</h4>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Selected Cart Items</h5>
+                    <h4 class="mb-5 select-Items-Total"></h4>
                 </div>
-                <div class="row g-4">
-                    <div class="col-12">
-                        <div class="row gy-4 red-color paragraph">
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">email US</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i><a class="text-href" href = "mailto: book@example.com">book@example.com</a></p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Order & Enquiry</h5>
-                                <p><i class="fa fa-phone text-primary me-2"></i><a class="text-href" href="tel:+917290000871">+917290000871</a></p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Order & Enquiry</h5>
-                                <p><i class="fa fa-phone text-primary me-2"></i><a class="text-href" href="tel:+917290000871">+917290000831</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.671007966803!2d77.4451663!3d28.5796403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceffb0bad3cf5%3A0xe7a69c51b58dfad3!2sChawla%20Tandoori%20Junction!5e0!3m2!1sen!2sin!4v1652614791719!5m2!1sen!2sin"
-                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul id = "cart-content-catageory" class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                    </ul>
+                    <div class="tab-content" id = "cart-content">
+                        
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-        </div>
-        <!-- Contact End -->
-
+        <!-- Menu End -->
+        
 
         <!-- Footer Start -->
-         <div class="container-fluid bg-yellow text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid bg-yellow text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 paragraph">
                <div class="row g-5">
                   <div class="col-lg-3 col-md-6">
@@ -203,6 +151,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/product.js"> </script> 
 </body>
 
 </html>

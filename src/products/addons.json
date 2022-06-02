@@ -1,0 +1,182 @@
+[
+    {
+        "id": 8,
+        "pid": 8,
+        "title": "Grilled Paneer + Brown Rice + Assorted veggies (Full Meal)",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 1,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Grilled Paneer + Brown Rice + Assorted veggies (Full Meal)",
+                "price": 299
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "pid": 9,
+        "title": "Grilled Chicken + Brown Rice + Egg + Assorted veggies (Full Meal)",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 0,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Grilled Chicken + Brown Rice + Egg + Assorted veggies (Full Meal)",
+                "price": 399
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "pid": 10,
+        "title": "Grilled Fish + Brown Rice + Egg + Assorted veggies (Full Meal)",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 0,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Grilled Fish + Brown Rice + Egg + Assorted veggies (Full Meal)",
+                "price": 509
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "pid": 11,
+        "title": "Grilled Chicken Breast + Assorted veggies",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 0,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Grilled Chicken Breast + Assorted veggies",
+                "price": 349
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "pid": 12,
+        "title": "Grilled Fish in Olive Oil + Assorted veggies",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 0,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Grilled Fish in Olive Oil + Assorted veggies",
+                "price": 199
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "pid": 13,
+        "title": "Bioled Checken Breast",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 0,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Bioled Checken Breast",
+                "price": 199
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "pid": 14,
+        "title": "Brown Rice + Assorted Veggies",
+        "catageory": "GYM Diet Food",
+        "catageorySubtitle": "Diet",
+        "type": 1,
+        "img": "paneertikkarolls.png",
+        "desc": "",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "Brown Rice + Assorted Veggies",
+                "price": 199
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "pid": 1,
+        "title": "Paneer Tikka Roll",
+        "catageory": "Rolls",
+        "catageorySubtitle": "Snacks",
+        "type": 1,
+        "img": "paneertikkarolls.png",
+        "desc": "Soft cottage cheese marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "",
+                "price": 189
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "pid": 2,
+        "title": "Malai Chaap Roll",
+        "catageory": "Rolls",
+        "catageorySubtitle": "Snacks",
+        "type": 1,
+        "img": "malaichaaproll.png",
+        "desc": "Soya chaap marinated and skewered in tandoor mixed with lots of vegetables, cream and sauces served on a crispy tawa parantha.",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "",
+                "price": 189
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "pid": 3,
+        "title": "Mutton Seek Roll",
+        "catageory": "Rolls",
+        "catageorySubtitle": "Snacks",
+        "type": 0,
+        "img": "muttonseekroll.png",
+        "desc": "Chef's Special Soft tendered lamb seekh marinated and skewered in tandoor mixed with lots of vegetables and sauces served on a crispy tawa parantha",
+        "prices": [
+            {
+                "id": 1,
+                "type": "Full",
+                "desc": "",
+                "price": 189
+            }
+        ]
+    },
+]
